@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextWave Collection</title>
+    <link rel = "stylesheet" href = "/static/style.css">
+
+    <!-- Include Oswald font family -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<!-- Include Noto Serif JP font family -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+	<!-- Include Noto Sans JP font family -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="landingpagebg">
+    <div class="container navbar1">
+        <nav>
+            <a href="/"><img class="brand" alt="NextWave Collection" src="/static/images/NWCLogo.png" width="234px" height="40px"></a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/login">Sign In</a></li>
+                <li><a href="/register">Create An Account</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/yourAccount">Your Account</a></li>
+                <!-- <li><a href="#"><input type="text" name="" id="search" placeholder="I'm searching for..."></a></li> -->
+                {{#if user}} <!-- Is not working -->
+                <form action="/logout" method="POST" class="logout">
+                    <button type="submit">Logout</button>
+                </form>
+                {{/if}}
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    {{{body}}}
+
+</body>
+</html>

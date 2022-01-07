@@ -1,0 +1,19 @@
+	
+{{#if error}}
+<div style = "background: maroon; color: white;">
+    {{error}}
+</div>
+{{/if}}
+
+<header class = "signinpagebg">
+    <!-- <img src="/static/images/Mic.jpg"> Pullingimages from css is no bueno -->
+</header>
+
+<div class="signin">
+    <form action="/login" method="POST">
+        <h3>Sign In</h3>
+        <input type="text" placeholder="Enter Username" name="username"/>
+        <input type="password" placeholder="Enter Password" name="password"/>
+        <button type="submit">Sign In</button>
+    </form>
+</div>

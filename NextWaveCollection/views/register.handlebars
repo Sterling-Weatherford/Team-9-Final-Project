@@ -1,0 +1,19 @@
+{{#if error}}
+<div style = "background: maroon; color: white;">
+    {{error}}
+</div>
+{{/if}}
+
+<header class ="createpagebg"></header>
+
+<div class="createaccount">
+    <form action="/register" method="POST">
+        <h3>Create An Account</h3>
+        <input type="text" placeholder="First Name" name="firstName"/>
+        <input type="text" placeholder="Last Name" name="lastName"/>
+        <input type="email" placeholder="Email Address" name="email"/>
+        <input type="text" placeholder="Username" name="username"/>
+        <input type="password" placeholder="Password" name="password"/>
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
